@@ -1,0 +1,1003 @@
+-- Instances:
+local voidrpadmin = Instance.new("ScreenGui")
+local logo = Instance.new("Frame")
+local logo_2 = Instance.new("ImageLabel")
+local cmdsmain = Instance.new("Frame")
+local cmdstop = Instance.new("Frame")
+local exit = Instance.new("TextButton")
+local cmdstext = Instance.new("TextLabel")
+local killall = Instance.new("TextLabel")
+local cuffall = Instance.new("TextLabel")
+local tazeall = Instance.new("TextLabel")
+local desc_1 = Instance.new("TextLabel")
+local desc_2 = Instance.new("TextLabel")
+local desc_3 = Instance.new("TextLabel")
+local fly = Instance.new("TextLabel")
+local desc_4 = Instance.new("TextLabel")
+local delworkspace = Instance.new("TextLabel")
+local desc_5 = Instance.new("TextLabel")
+local bridge = Instance.new("TextLabel")
+local desc_6 = Instance.new("TextLabel")
+local gamepasses = Instance.new("TextLabel")
+local desc_7 = Instance.new("TextLabel")
+local noclip = Instance.new("TextLabel")
+local desc_8 = Instance.new("TextLabel")
+local back = Instance.new("TextButton")
+local next = Instance.new("TextButton")
+local cmdsmain2 = Instance.new("Frame")
+local cmdstop_2 = Instance.new("Frame")
+local exit_2 = Instance.new("TextButton")
+local cmdstext_2 = Instance.new("TextLabel")
+local celltp = Instance.new("TextLabel")
+local popotp = Instance.new("TextLabel")
+local crimtp = Instance.new("TextLabel")
+local caketp = Instance.new("TextLabel")
+local towertp = Instance.new("TextLabel")
+local btools = Instance.new("TextLabel")
+local desc_9 = Instance.new("TextLabel")
+local desc_10 = Instance.new("TextLabel")
+local desc_11 = Instance.new("TextLabel")
+local desc_12 = Instance.new("TextLabel")
+local desc_13 = Instance.new("TextLabel")
+local next_2 = Instance.new("TextButton")
+local back_2 = Instance.new("TextButton")
+local desc_14 = Instance.new("TextLabel")
+local getkey = Instance.new("TextLabel")
+local desc_15 = Instance.new("TextLabel")
+local ss = Instance.new("TextLabel")
+local desc_16 = Instance.new("TextLabel")
+--Properties:
+voidrpadmin.Name = "voidrpadmin"
+voidrpadmin.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+voidrpadmin.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+logo.Name = "logo"
+logo.Parent = voidrpadmin
+logo.BackgroundColor3 = Color3.new(1, 1, 1)
+logo.BackgroundTransparency = 1
+logo.Position = UDim2.new(0, 0, 0.87714994, 0)
+logo.Size = UDim2.new(0, 100, 0, 100)
+
+logo_2.Name = "logo"
+logo_2.Parent = logo
+logo_2.BackgroundColor3 = Color3.new(1, 1, 1)
+logo_2.BackgroundTransparency = 1
+logo_2.Size = UDim2.new(0, 100, 0, 100)
+logo_2.Image = "rbxassetid://57708297"
+
+cmdsmain.Name = "cmdsmain"
+cmdsmain.Parent = voidrpadmin
+cmdsmain.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+cmdsmain.BackgroundTransparency = 0.30000001192093
+cmdsmain.Position = UDim2.new(0.275142312, 0, 0.157248154, 0)
+cmdsmain.Size = UDim2.new(0, 711, 0, 586)
+cmdsmain.Visible = false
+
+cmdstop.Name = "cmdstop"
+cmdstop.Parent = cmdsmain
+cmdstop.BackgroundColor3 = Color3.new(0, 0, 0)
+cmdstop.BackgroundTransparency = 0.5
+cmdstop.Size = UDim2.new(0, 711, 0, 37)
+
+exit.Name = "exit"
+exit.Parent = cmdstop
+exit.BackgroundColor3 = Color3.new(1, 1, 1)
+exit.BackgroundTransparency = 1
+exit.Position = UDim2.new(0.957805932, 0, 0, 0)
+exit.Size = UDim2.new(0, 30, 0, 37)
+exit.Font = Enum.Font.SourceSans
+exit.Text = "X"
+exit.TextColor3 = Color3.new(1, 1, 1)
+exit.TextScaled = true
+exit.TextSize = 14
+exit.TextWrapped = true
+
+cmdstext.Name = "cmdstext"
+cmdstext.Parent = cmdstop
+cmdstext.BackgroundColor3 = Color3.new(1, 1, 1)
+cmdstext.BackgroundTransparency = 1
+cmdstext.Size = UDim2.new(0, 158, 0, 37)
+cmdstext.Font = Enum.Font.SourceSans
+cmdstext.Text = "Commands"
+cmdstext.TextColor3 = Color3.new(1, 1, 1)
+cmdstext.TextScaled = true
+cmdstext.TextSize = 14
+cmdstext.TextWrapped = true
+
+killall.Name = "killall"
+killall.Parent = cmdsmain
+killall.BackgroundColor3 = Color3.new(1, 1, 1)
+killall.BackgroundTransparency = 1
+killall.Position = UDim2.new(0.0379746817, 0, 0.0853242353, 0)
+killall.Size = UDim2.new(0, 200, 0, 50)
+killall.Font = Enum.Font.Code
+killall.Text = "/kill all"
+killall.TextColor3 = Color3.new(1, 1, 1)
+killall.TextScaled = true
+killall.TextSize = 14
+killall.TextWrapped = true
+
+cuffall.Name = "cuffall"
+cuffall.Parent = cmdsmain
+cuffall.BackgroundColor3 = Color3.new(1, 1, 1)
+cuffall.BackgroundTransparency = 1
+cuffall.Position = UDim2.new(0.0379746817, 0, 0.197952226, 0)
+cuffall.Size = UDim2.new(0, 200, 0, 50)
+cuffall.Font = Enum.Font.Code
+cuffall.Text = "/cuff all"
+cuffall.TextColor3 = Color3.new(1, 1, 1)
+cuffall.TextScaled = true
+cuffall.TextSize = 14
+cuffall.TextWrapped = true
+
+tazeall.Name = "tazeall"
+tazeall.Parent = cmdsmain
+tazeall.BackgroundColor3 = Color3.new(1, 1, 1)
+tazeall.BackgroundTransparency = 1
+tazeall.Position = UDim2.new(0.0379746817, 0, 0.305460721, 0)
+tazeall.Size = UDim2.new(0, 200, 0, 50)
+tazeall.Font = Enum.Font.Code
+tazeall.Text = "/taze all"
+tazeall.TextColor3 = Color3.new(1, 1, 1)
+tazeall.TextScaled = true
+tazeall.TextSize = 14
+tazeall.TextWrapped = true
+
+desc_1.Name = "desc_1"
+desc_1.Parent = cmdsmain
+desc_1.BackgroundColor3 = Color3.new(1, 1, 1)
+desc_1.BackgroundTransparency = 1
+desc_1.Position = UDim2.new(0.369901538, 0, 0.0853242353, 0)
+desc_1.Size = UDim2.new(0, 264, 0, 50)
+desc_1.Font = Enum.Font.Code
+desc_1.Text = "kill's all players"
+desc_1.TextColor3 = Color3.new(1, 1, 1)
+desc_1.TextScaled = true
+desc_1.TextSize = 14
+desc_1.TextWrapped = true
+
+desc_2.Name = "desc_2"
+desc_2.Parent = cmdsmain
+desc_2.BackgroundColor3 = Color3.new(1, 1, 1)
+desc_2.BackgroundTransparency = 1
+desc_2.Position = UDim2.new(0.369901538, 0, 0.197952226, 0)
+desc_2.Size = UDim2.new(0, 264, 0, 50)
+desc_2.Font = Enum.Font.Code
+desc_2.Text = "cuff's all players"
+desc_2.TextColor3 = Color3.new(1, 1, 1)
+desc_2.TextScaled = true
+desc_2.TextSize = 14
+desc_2.TextWrapped = true
+
+desc_3.Name = "desc_3"
+desc_3.Parent = cmdsmain
+desc_3.BackgroundColor3 = Color3.new(1, 1, 1)
+desc_3.BackgroundTransparency = 1
+desc_3.Position = UDim2.new(0.369901538, 0, 0.305460751, 0)
+desc_3.Size = UDim2.new(0, 264, 0, 50)
+desc_3.Font = Enum.Font.Code
+desc_3.Text = "tazes all players"
+desc_3.TextColor3 = Color3.new(1, 1, 1)
+desc_3.TextScaled = true
+desc_3.TextSize = 14
+desc_3.TextWrapped = true
+
+fly.Name = "fly"
+fly.Parent = cmdsmain
+fly.BackgroundColor3 = Color3.new(1, 1, 1)
+fly.BackgroundTransparency = 1
+fly.Position = UDim2.new(0.0379746817, 0, 0.433447063, 0)
+fly.Size = UDim2.new(0, 200, 0, 50)
+fly.Font = Enum.Font.Code
+fly.Text = "/fly "
+fly.TextColor3 = Color3.new(1, 1, 1)
+fly.TextScaled = true
+fly.TextSize = 14
+fly.TextWrapped = true
+fly.TextXAlignment = Enum.TextXAlignment.Left
+
+desc_4.Name = "desc_4"
+desc_4.Parent = cmdsmain
+desc_4.BackgroundColor3 = Color3.new(1, 1, 1)
+desc_4.BackgroundTransparency = 1
+desc_4.Position = UDim2.new(0.369901538, 0, 0.433447093, 0)
+desc_4.Size = UDim2.new(0, 264, 0, 50)
+desc_4.Font = Enum.Font.Code
+desc_4.Text = "press E to fly"
+desc_4.TextColor3 = Color3.new(1, 1, 1)
+desc_4.TextScaled = true
+desc_4.TextSize = 14
+desc_4.TextWrapped = true
+
+delworkspace.Name = "delworkspace"
+delworkspace.Parent = cmdsmain
+delworkspace.BackgroundColor3 = Color3.new(1, 1, 1)
+delworkspace.BackgroundTransparency = 1
+delworkspace.Position = UDim2.new(0.0379746817, 0, 0.561433434, 0)
+delworkspace.Size = UDim2.new(0, 200, 0, 50)
+delworkspace.Font = Enum.Font.Code
+delworkspace.Text = "/delworkspace"
+delworkspace.TextColor3 = Color3.new(1, 1, 1)
+delworkspace.TextScaled = true
+delworkspace.TextSize = 14
+delworkspace.TextWrapped = true
+delworkspace.TextXAlignment = Enum.TextXAlignment.Left
+
+desc_5.Name = "desc_5"
+desc_5.Parent = cmdsmain
+desc_5.BackgroundColor3 = Color3.new(1, 1, 1)
+desc_5.BackgroundTransparency = 1
+desc_5.Position = UDim2.new(0.369901538, 0, 0.561433434, 0)
+desc_5.Size = UDim2.new(0, 393, 0, 50)
+desc_5.Font = Enum.Font.Code
+desc_5.Text = "Deletes workspace or fixes it"
+desc_5.TextColor3 = Color3.new(1, 1, 1)
+desc_5.TextScaled = true
+desc_5.TextSize = 14
+desc_5.TextWrapped = true
+
+bridge.Name = "bridge"
+bridge.Parent = cmdsmain
+bridge.BackgroundColor3 = Color3.new(1, 1, 1)
+bridge.BackgroundTransparency = 1
+bridge.Position = UDim2.new(0.0379746817, 0, 0.662115991, 0)
+bridge.Size = UDim2.new(0, 200, 0, 50)
+bridge.Font = Enum.Font.Code
+bridge.Text = "/bridge"
+bridge.TextColor3 = Color3.new(1, 1, 1)
+bridge.TextScaled = true
+bridge.TextSize = 14
+bridge.TextWrapped = true
+bridge.TextXAlignment = Enum.TextXAlignment.Left
+
+desc_6.Name = "desc_6"
+desc_6.Parent = cmdsmain
+desc_6.BackgroundColor3 = Color3.new(1, 1, 1)
+desc_6.BackgroundTransparency = 1
+desc_6.Position = UDim2.new(0.369901538, 0, 0.662116051, 0)
+desc_6.Size = UDim2.new(0, 418, 0, 50)
+desc_6.Font = Enum.Font.Code
+desc_6.Text = "Gives you a bridge tool that you can walk on"
+desc_6.TextColor3 = Color3.new(1, 1, 1)
+desc_6.TextScaled = true
+desc_6.TextSize = 14
+desc_6.TextWrapped = true
+
+gamepasses.Name = "gamepasses"
+gamepasses.Parent = cmdsmain
+gamepasses.BackgroundColor3 = Color3.new(1, 1, 1)
+gamepasses.BackgroundTransparency = 1
+gamepasses.Position = UDim2.new(0.0379746817, 0, 0.78498286, 0)
+gamepasses.Size = UDim2.new(0, 200, 0, 50)
+gamepasses.Font = Enum.Font.Code
+gamepasses.Text = "/gamepasses"
+gamepasses.TextColor3 = Color3.new(1, 1, 1)
+gamepasses.TextScaled = true
+gamepasses.TextSize = 14
+gamepasses.TextWrapped = true
+gamepasses.TextXAlignment = Enum.TextXAlignment.Left
+
+desc_7.Name = "desc_7"
+desc_7.Parent = cmdsmain
+desc_7.BackgroundColor3 = Color3.new(1, 1, 1)
+desc_7.BackgroundTransparency = 1
+desc_7.Position = UDim2.new(0.369901538, 0, 0.78498292, 0)
+desc_7.Size = UDim2.new(0, 418, 0, 50)
+desc_7.Font = Enum.Font.Code
+desc_7.Text = "Gives you all gamepasses"
+desc_7.TextColor3 = Color3.new(1, 1, 1)
+desc_7.TextScaled = true
+desc_7.TextSize = 14
+desc_7.TextWrapped = true
+
+noclip.Name = "noclip"
+noclip.Parent = cmdsmain
+noclip.BackgroundColor3 = Color3.new(1, 1, 1)
+noclip.BackgroundTransparency = 1
+noclip.Position = UDim2.new(0.0379746817, 0, 0.890784919, 0)
+noclip.Size = UDim2.new(0, 200, 0, 50)
+noclip.Font = Enum.Font.Code
+noclip.Text = "/noclip"
+noclip.TextColor3 = Color3.new(1, 1, 1)
+noclip.TextScaled = true
+noclip.TextSize = 14
+noclip.TextWrapped = true
+noclip.TextXAlignment = Enum.TextXAlignment.Left
+
+desc_8.Name = "desc_8"
+desc_8.Parent = cmdsmain
+desc_8.BackgroundColor3 = Color3.new(1, 1, 1)
+desc_8.BackgroundTransparency = 1
+desc_8.Position = UDim2.new(0.369901538, 0, 0.889078498, 0)
+desc_8.Size = UDim2.new(0, 418, 0, 50)
+desc_8.Font = Enum.Font.Code
+desc_8.Text = "Lets you walk through walls"
+desc_8.TextColor3 = Color3.new(1, 1, 1)
+desc_8.TextScaled = true
+desc_8.TextSize = 14
+desc_8.TextWrapped = true
+
+back.Name = "back"
+back.Parent = cmdsmain
+back.BackgroundColor3 = Color3.new(1, 1, 1)
+back.BackgroundTransparency = 1
+back.Position = UDim2.new(0.420534432, 0, 0, 0)
+back.Size = UDim2.new(0, 46, 0, 37)
+back.Font = Enum.Font.SourceSans
+back.Text = "<"
+back.TextColor3 = Color3.new(1, 1, 1)
+back.TextScaled = true
+back.TextSize = 14
+back.TextWrapped = true
+
+next.Name = "next"
+next.Parent = cmdsmain
+next.BackgroundColor3 = Color3.new(1, 1, 1)
+next.BackgroundTransparency = 1
+next.Position = UDim2.new(0.513361454, 0, 0, 0)
+next.Size = UDim2.new(0, 46, 0, 37)
+next.Font = Enum.Font.SourceSans
+next.Text = ">"
+next.TextColor3 = Color3.new(1, 1, 1)
+next.TextScaled = true
+next.TextSize = 14
+next.TextWrapped = true
+
+cmdsmain2.Name = "cmdsmain2"
+cmdsmain2.Parent = voidrpadmin
+cmdsmain2.BackgroundColor3 = Color3.new(0.129412, 0.129412, 0.129412)
+cmdsmain2.BackgroundTransparency = 0.5
+cmdsmain2.Position = UDim2.new(0.275000006, 0, 0.157000005, 0)
+cmdsmain2.Size = UDim2.new(0, 711, 0, 586)
+cmdsmain2.Visible = false
+
+cmdstop_2.Name = "cmdstop"
+cmdstop_2.Parent = cmdsmain2
+cmdstop_2.BackgroundColor3 = Color3.new(0, 0, 0)
+cmdstop_2.BackgroundTransparency = 0.5
+cmdstop_2.Size = UDim2.new(0, 711, 0, 37)
+
+exit_2.Name = "exit"
+exit_2.Parent = cmdstop_2
+exit_2.BackgroundColor3 = Color3.new(1, 1, 1)
+exit_2.BackgroundTransparency = 1
+exit_2.Position = UDim2.new(0.957805932, 0, 0, 0)
+exit_2.Size = UDim2.new(0, 30, 0, 37)
+exit_2.Font = Enum.Font.SourceSans
+exit_2.Text = "X"
+exit_2.TextColor3 = Color3.new(1, 1, 1)
+exit_2.TextScaled = true
+exit_2.TextSize = 14
+exit_2.TextWrapped = true
+
+cmdstext_2.Name = "cmdstext"
+cmdstext_2.Parent = cmdstop_2
+cmdstext_2.BackgroundColor3 = Color3.new(1, 1, 1)
+cmdstext_2.BackgroundTransparency = 1
+cmdstext_2.Size = UDim2.new(0, 158, 0, 37)
+cmdstext_2.Font = Enum.Font.SourceSans
+cmdstext_2.Text = "Commands"
+cmdstext_2.TextColor3 = Color3.new(1, 1, 1)
+cmdstext_2.TextScaled = true
+cmdstext_2.TextSize = 14
+cmdstext_2.TextWrapped = true
+
+celltp.Name = "celltp"
+celltp.Parent = cmdsmain2
+celltp.BackgroundColor3 = Color3.new(1, 1, 1)
+celltp.BackgroundTransparency = 1
+celltp.Position = UDim2.new(0.0168776363, 0, 0.117747441, 0)
+celltp.Size = UDim2.new(0, 200, 0, 50)
+celltp.Font = Enum.Font.Code
+celltp.Text = "/tp cell"
+celltp.TextColor3 = Color3.new(1, 1, 1)
+celltp.TextScaled = true
+celltp.TextSize = 14
+celltp.TextWrapped = true
+celltp.TextXAlignment = Enum.TextXAlignment.Left
+
+popotp.Name = "popotp"
+popotp.Parent = cmdsmain2
+popotp.BackgroundColor3 = Color3.new(1, 1, 1)
+popotp.BackgroundTransparency = 1
+popotp.Position = UDim2.new(0.0168776363, 0, 0.228668943, 0)
+popotp.Size = UDim2.new(0, 200, 0, 50)
+popotp.Font = Enum.Font.Code
+popotp.Text = "/tp police"
+popotp.TextColor3 = Color3.new(1, 1, 1)
+popotp.TextScaled = true
+popotp.TextSize = 14
+popotp.TextWrapped = true
+popotp.TextXAlignment = Enum.TextXAlignment.Left
+
+crimtp.Name = "crimtp"
+crimtp.Parent = cmdsmain2
+crimtp.BackgroundColor3 = Color3.new(1, 1, 1)
+crimtp.BackgroundTransparency = 1
+crimtp.Position = UDim2.new(0.0168776363, 0, 0.343003422, 0)
+crimtp.Size = UDim2.new(0, 200, 0, 50)
+crimtp.Font = Enum.Font.Code
+crimtp.Text = "/tp crims"
+crimtp.TextColor3 = Color3.new(1, 1, 1)
+crimtp.TextScaled = true
+crimtp.TextSize = 14
+crimtp.TextWrapped = true
+crimtp.TextXAlignment = Enum.TextXAlignment.Left
+
+caketp.Name = "caketp"
+caketp.Parent = cmdsmain2
+caketp.BackgroundColor3 = Color3.new(1, 1, 1)
+caketp.BackgroundTransparency = 1
+caketp.Position = UDim2.new(0.0168776363, 0, 0.445392489, 0)
+caketp.Size = UDim2.new(0, 200, 0, 50)
+caketp.Font = Enum.Font.Code
+caketp.Text = "/tp cake"
+caketp.TextColor3 = Color3.new(1, 1, 1)
+caketp.TextScaled = true
+caketp.TextSize = 14
+caketp.TextWrapped = true
+caketp.TextXAlignment = Enum.TextXAlignment.Left
+
+towertp.Name = "towertp"
+towertp.Parent = cmdsmain2
+towertp.BackgroundColor3 = Color3.new(1, 1, 1)
+towertp.BackgroundTransparency = 1
+towertp.Position = UDim2.new(0.0168776363, 0, 0.55290103, 0)
+towertp.Size = UDim2.new(0, 200, 0, 50)
+towertp.Font = Enum.Font.Code
+towertp.Text = "/tp tower"
+towertp.TextColor3 = Color3.new(1, 1, 1)
+towertp.TextScaled = true
+towertp.TextSize = 14
+towertp.TextWrapped = true
+towertp.TextXAlignment = Enum.TextXAlignment.Left
+
+btools.Name = "btools"
+btools.Parent = cmdsmain2
+btools.BackgroundColor3 = Color3.new(1, 1, 1)
+btools.BackgroundTransparency = 1
+btools.Position = UDim2.new(0.0168776363, 0, 0.662116051, 0)
+btools.Size = UDim2.new(0, 200, 0, 50)
+btools.Font = Enum.Font.Code
+btools.Text = "/btools"
+btools.TextColor3 = Color3.new(1, 1, 1)
+btools.TextScaled = true
+btools.TextSize = 14
+btools.TextWrapped = true
+btools.TextXAlignment = Enum.TextXAlignment.Left
+
+desc_9.Name = "desc_9"
+desc_9.Parent = cmdsmain2
+desc_9.BackgroundColor3 = Color3.new(1, 1, 1)
+desc_9.BackgroundTransparency = 1
+desc_9.Position = UDim2.new(0.344585091, 0, 0.117747441, 0)
+desc_9.Size = UDim2.new(0, 302, 0, 50)
+desc_9.Font = Enum.Font.Code
+desc_9.Text = "tp's you to the cells"
+desc_9.TextColor3 = Color3.new(1, 1, 1)
+desc_9.TextScaled = true
+desc_9.TextSize = 14
+desc_9.TextWrapped = true
+
+desc_10.Name = "desc_10"
+desc_10.Parent = cmdsmain2
+desc_10.BackgroundColor3 = Color3.new(1, 1, 1)
+desc_10.BackgroundTransparency = 1
+desc_10.Position = UDim2.new(0.344585091, 0, 0.228668943, 0)
+desc_10.Size = UDim2.new(0, 302, 0, 50)
+desc_10.Font = Enum.Font.Code
+desc_10.Text = "tp's you to the police"
+desc_10.TextColor3 = Color3.new(1, 1, 1)
+desc_10.TextScaled = true
+desc_10.TextSize = 14
+desc_10.TextWrapped = true
+
+desc_11.Name = "desc_11"
+desc_11.Parent = cmdsmain2
+desc_11.BackgroundColor3 = Color3.new(1, 1, 1)
+desc_11.BackgroundTransparency = 1
+desc_11.Position = UDim2.new(0.344585091, 0, 0.343003422, 0)
+desc_11.Size = UDim2.new(0, 327, 0, 50)
+desc_11.Font = Enum.Font.Code
+desc_11.Text = "tp's you to the crim base"
+desc_11.TextColor3 = Color3.new(1, 1, 1)
+desc_11.TextScaled = true
+desc_11.TextSize = 14
+desc_11.TextWrapped = true
+
+desc_12.Name = "desc_12"
+desc_12.Parent = cmdsmain2
+desc_12.BackgroundColor3 = Color3.new(1, 1, 1)
+desc_12.BackgroundTransparency = 1
+desc_12.Position = UDim2.new(0.344585091, 0, 0.445392489, 0)
+desc_12.Size = UDim2.new(0, 302, 0, 50)
+desc_12.Font = Enum.Font.Code
+desc_12.Text = "tp's you to the cake"
+desc_12.TextColor3 = Color3.new(1, 1, 1)
+desc_12.TextScaled = true
+desc_12.TextSize = 14
+desc_12.TextWrapped = true
+
+desc_13.Name = "desc_13"
+desc_13.Parent = cmdsmain2
+desc_13.BackgroundColor3 = Color3.new(1, 1, 1)
+desc_13.BackgroundTransparency = 1
+desc_13.Position = UDim2.new(0.344585091, 0, 0.55290103, 0)
+desc_13.Size = UDim2.new(0, 302, 0, 50)
+desc_13.Font = Enum.Font.Code
+desc_13.Text = "tp's you to the tower"
+desc_13.TextColor3 = Color3.new(1, 1, 1)
+desc_13.TextScaled = true
+desc_13.TextSize = 14
+desc_13.TextWrapped = true
+
+next_2.Name = "next"
+next_2.Parent = cmdsmain2
+next_2.BackgroundColor3 = Color3.new(1, 1, 1)
+next_2.BackgroundTransparency = 1
+next_2.Position = UDim2.new(0.513361454, 0, 0, 0)
+next_2.Size = UDim2.new(0, 46, 0, 37)
+next_2.Font = Enum.Font.SourceSans
+next_2.Text = ">"
+next_2.TextColor3 = Color3.new(1, 1, 1)
+next_2.TextScaled = true
+next_2.TextSize = 14
+next_2.TextWrapped = true
+
+back_2.Name = "back"
+back_2.Parent = cmdsmain2
+back_2.BackgroundColor3 = Color3.new(1, 1, 1)
+back_2.BackgroundTransparency = 1
+back_2.Position = UDim2.new(0.420534432, 0, 0, 0)
+back_2.Size = UDim2.new(0, 46, 0, 37)
+back_2.Font = Enum.Font.SourceSans
+back_2.Text = "<"
+back_2.TextColor3 = Color3.new(1, 1, 1)
+back_2.TextScaled = true
+back_2.TextSize = 14
+back_2.TextWrapped = true
+
+desc_14.Name = "desc_14"
+desc_14.Parent = cmdsmain2
+desc_14.BackgroundColor3 = Color3.new(1, 1, 1)
+desc_14.BackgroundTransparency = 1
+desc_14.Position = UDim2.new(0.344585091, 0, 0.66040951, 0)
+desc_14.Size = UDim2.new(0, 451, 0, 50)
+desc_14.Font = Enum.Font.Code
+desc_14.Text = "give you btools (credit to NOLL)"
+desc_14.TextColor3 = Color3.new(1, 1, 1)
+desc_14.TextScaled = true
+desc_14.TextSize = 14
+desc_14.TextWrapped = true
+
+getkey.Name = "getkey"
+getkey.Parent = cmdsmain2
+getkey.BackgroundColor3 = Color3.new(1, 1, 1)
+getkey.BackgroundTransparency = 1
+getkey.Position = UDim2.new(0.0253164545, 0, 0.776450515, 0)
+getkey.Size = UDim2.new(0, 200, 0, 50)
+getkey.Font = Enum.Font.Code
+getkey.Text = "/key"
+getkey.TextColor3 = Color3.new(1, 1, 1)
+getkey.TextScaled = true
+getkey.TextSize = 14
+getkey.TextWrapped = true
+getkey.TextXAlignment = Enum.TextXAlignment.Left
+
+desc_15.Name = "desc_15"
+desc_15.Parent = cmdsmain2
+desc_15.BackgroundColor3 = Color3.new(1, 1, 1)
+desc_15.BackgroundTransparency = 1
+desc_15.Position = UDim2.new(0.344585091, 0, 0.776450455, 0)
+desc_15.Size = UDim2.new(0, 451, 0, 50)
+desc_15.Font = Enum.Font.Code
+desc_15.Text = "gives you a key card"
+desc_15.TextColor3 = Color3.new(1, 1, 1)
+desc_15.TextScaled = true
+desc_15.TextSize = 14
+desc_15.TextWrapped = true
+
+ss.Name = "ss"
+ss.Parent = cmdsmain2
+ss.BackgroundColor3 = Color3.new(1, 1, 1)
+ss.BackgroundTransparency = 1
+ss.Position = UDim2.new(0.0253164545, 0, 0.89249146, 0)
+ss.Size = UDim2.new(0, 200, 0, 50)
+ss.Font = Enum.Font.Code
+ss.Text = "/ss"
+ss.TextColor3 = Color3.new(1, 1, 1)
+ss.TextScaled = true
+ss.TextSize = 14
+ss.TextWrapped = true
+ss.TextXAlignment = Enum.TextXAlignment.Left
+
+desc_16.Name = "desc_16"
+desc_16.Parent = cmdsmain2
+desc_16.BackgroundColor3 = Color3.new(1, 1, 1)
+desc_16.BackgroundTransparency = 1
+desc_16.Position = UDim2.new(0.344585091, 0, 0.8924914, 0)
+desc_16.Size = UDim2.new(0, 451, 0, 50)
+desc_16.Font = Enum.Font.Code
+desc_16.Text = "a server sided executer"
+desc_16.TextColor3 = Color3.new(1, 1, 1)
+desc_16.TextScaled = true
+desc_16.TextSize = 14
+desc_16.TextWrapped = true
+-- Scripts:
+function SCRIPT_QAEN81_FAKESCRIPT() -- voidrpadmin.commands 
+	local script = Instance.new('LocalScript')
+	script.Parent = voidrpadmin
+	game.Players.LocalPlayer.Chatted:connect(function(msg)
+		if msg:match("/kill all") then
+			for _, v in pairs(game.Players:GetChildren()) do
+				game.Workspace.resources.RemoteEvent:FireServer("dealDamage", v.Character.Humanoid, 100) 
+			end
+		end
+		
+		if msg:match("/cmds") then
+			script.Parent.cmdsmain.Visible = true
+		end
+		
+		if msg:match("/taze all") then
+			for _, v in pairs(game.Players:GetChildren()) do
+				game.Workspace.resources.RemoteEvent:FireServer("tase", v) 
+			end
+		end
+		
+		if msg:match("/cuff all") then
+			for _, v in pairs(game.Players:GetChildren()) do
+				game.Workspace.resources.RemoteEvent:FireServer("cuff", v) 
+			end
+		end
+		
+		if msg:match("/fly") then
+			repeat wait() 
+			until game.Players.LocalPlayer and game.Players.LocalPlayer.Character and game.Players.LocalPlayer.Character:findFirstChild("Torso") and game.Players.LocalPlayer.Character:findFirstChild("Humanoid") 
+		local mouse = game.Players.LocalPlayer:GetMouse() 
+		repeat wait() until mouse
+		local plr = game.Players.LocalPlayer 
+		local torso = plr.Character.Torso 
+		local flying = true
+		local deb = true 
+		local ctrl = {f = 0, b = 0, l = 0, r = 0} 
+		local lastctrl = {f = 0, b = 0, l = 0, r = 0} 
+		local maxspeed = 50
+		local speed = 0
+		
+		function Fly() 
+		local bg = Instance.new("BodyGyro", torso) 
+		bg.P = 9e4 
+		bg.maxTorque = Vector3.new(9e9, 9e9, 9e9) 
+		bg.cframe = torso.CFrame 
+		local bv = Instance.new("BodyVelocity", torso) 
+		bv.velocity = Vector3.new(0,0.1,0) 
+		bv.maxForce = Vector3.new(9e9, 9e9, 9e9) 
+		repeat wait() 
+		plr.Character.Humanoid.PlatformStand = true 
+		if ctrl.l + ctrl.r ~= 0 or ctrl.f + ctrl.b ~= 0 then 
+		speed = speed+.5+(speed/maxspeed) 
+		if speed > maxspeed then 
+		speed = maxspeed 
+		end 
+		elseif not (ctrl.l + ctrl.r ~= 0 or ctrl.f + ctrl.b ~= 0) and speed ~= 0 then 
+		speed = speed-1 
+		if speed < 0 then 
+		speed = 0 
+		end 
+		end 
+		if (ctrl.l + ctrl.r) ~= 0 or (ctrl.f + ctrl.b) ~= 0 then 
+		bv.velocity = ((game.Workspace.CurrentCamera.CoordinateFrame.lookVector * (ctrl.f+ctrl.b)) + ((game.Workspace.CurrentCamera.CoordinateFrame * CFrame.new(ctrl.l+ctrl.r,(ctrl.f+ctrl.b)*.2,0).p) - game.Workspace.CurrentCamera.CoordinateFrame.p))*speed 
+		lastctrl = {f = ctrl.f, b = ctrl.b, l = ctrl.l, r = ctrl.r} 
+		elseif (ctrl.l + ctrl.r) == 0 and (ctrl.f + ctrl.b) == 0 and speed ~= 0 then 
+		bv.velocity = ((game.Workspace.CurrentCamera.CoordinateFrame.lookVector * (lastctrl.f+lastctrl.b)) + ((game.Workspace.CurrentCamera.CoordinateFrame * CFrame.new(lastctrl.l+lastctrl.r,(lastctrl.f+lastctrl.b)*.2,0).p) - game.Workspace.CurrentCamera.CoordinateFrame.p))*speed 
+		else 
+		bv.velocity = Vector3.new(0,0.1,0) 
+		end 
+		bg.cframe = game.Workspace.CurrentCamera.CoordinateFrame * CFrame.Angles(-math.rad((ctrl.f+ctrl.b)*50*speed/maxspeed),0,0) 
+		until not flying 
+		ctrl = {f = 0, b = 0, l = 0, r = 0} 
+		lastctrl = {f = 0, b = 0, l = 0, r = 0} 
+		speed = 0 
+		bg:Destroy() 
+		bv:Destroy() 
+		plr.Character.Humanoid.PlatformStand = false 
+		end 
+		mouse.KeyDown:connect(function(key) 
+		if key:lower() == "e" then 
+		if flying then flying = false 
+		else 
+		flying = true 
+		Fly() 
+		end 
+		elseif key:lower() == "w" then 
+		ctrl.f = 1 
+		elseif key:lower() == "s" then 
+		ctrl.b = -1 
+		elseif key:lower() == "a" then 
+		ctrl.l = -1 
+		elseif key:lower() == "d" then 
+		ctrl.r = 1 
+		end 
+		end) 
+		mouse.KeyUp:connect(function(key) 
+		if key:lower() == "w" then 
+		ctrl.f = 0 
+		elseif key:lower() == "s" then 
+		ctrl.b = 0 
+		elseif key:lower() == "a" then 
+		ctrl.l = 0 
+		elseif key:lower() == "d" then 
+		ctrl.r = 0 
+		end 
+		end)
+		Fly()
+		end
+		
+		if msg:match("/delworkspace") then
+			local rw = workspace.resources.RemoteEvent 
+		 	for i,k in pairs(workspace:GetChildren()) do
+			 	rw:FireServer("toggleShield", k)
+		 	end
+		end
+		
+		if msg:match("/noclip") then
+				noclip = false
+		game:GetService('RunService').Stepped:connect(function()
+		if noclip then
+		game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+		end
+		end)
+		local plr = game.Players.LocalPlayer
+		local mouse = plr:GetMouse()
+		mouse.KeyDown:connect(function(key)
+		
+		if key == "x" then
+		noclip = not noclip
+		game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+		end
+		end)
+		
+		if msg:match("/gamepasses") then
+			workspace.resources.RemoteFunction:InvokeServer("setDataValue", "hasSwat", true)
+			workspace.resources.RemoteFunction:InvokeServer("setDataValue", "hasSpecOps", true)
+			workspace.resources.RemoteFunction:InvokeServer("setDataValue", "hasMerc", true)
+			workspace.resources.RemoteFunction:InvokeServer("setDataValue", "hasPilot", true)
+			workspace.resources.RemoteFunction:InvokeServer("setDataValue", "hasAtv", true)
+		end
+		end
+		
+		if msg:match("/bridge") then
+				local tool = Instance.new("Tool", game.Players.LocalPlayer.Backpack)
+		tool.RequiresHandle = false
+		tool.Name = "Bridge"
+		tool.CanBeDropped = false
+		
+		local pos1 = nil
+		local pos2 = nil
+		local bridgesize = 10
+		local mouse = game.Players.LocalPlayer:GetMouse()
+		local isEquipped = false
+		local isSettingPos = false
+		local bridgeEnabled = false
+		local dist = 0
+		
+		function asdf(origin, target, properties)
+		game.Workspace.resources.RemoteEvent:FireServer("FireAllClients","drawLaser", origin, target, properties)
+		end
+		
+		mouse.KeyDown:Connect(function(k)
+		if not isEquipped then return end
+		key = k:lower()
+		if key == "e" then
+		if bridgesize <= 5 then return end
+		bridgesize = bridgesize - 1
+		game:GetService("StarterGui"):SetCore("SendNotification", {
+		Title = "Information";
+		Text = "New size: " .. bridgesize;
+		}) 
+		print(bridgesize)
+		end
+		if key == "r" then
+		if bridgesize >= 25 then return end
+		bridgesize = bridgesize + 1
+		game:GetService("StarterGui"):SetCore("SendNotification", {
+		Title = "Information";
+		Text = "New size: " .. bridgesize;
+		}) 
+		print(bridgesize)
+		end
+		if key == "t" then
+		bridgeEnabled = false
+		isSettingPos = false
+		pos1 = nil
+		pos2 = nil
+		bridgesize = 10
+		game:GetService("StarterGui"):SetCore("SendNotification", {
+		Title = "Information";
+		Text = "Values reset to default.";
+		}) 
+		end
+		end)
+		
+		
+		tool.Equipped:Connect(function()
+		isEquipped = true
+		game:GetService("StarterGui"):SetCore("SendNotification", {
+		Title = "Information";
+		Text = "Click to set positions, Press R to increase width, E to decrease width and Press T to reset.";
+		})
+		end)
+		
+		tool.Unequipped:Connect(function()
+		isEquipped = false
+		end)
+		
+		
+		
+		tool.Activated:Connect(function()
+		if not isSettingPos then
+		pos1 = mouse.hit
+		game:GetService("StarterGui"):SetCore("SendNotification", {
+		Title = "Information";
+		Text = "Position 1 saved, click again for position 2.";
+		})
+		isSettingPos = true
+		else
+		pos2 = mouse.hit
+		game:GetService("StarterGui"):SetCore("SendNotification", {
+		Title = "Information";
+		Text = "Position 2 saved, creating bridge...";
+		})
+		isSettingPos = false
+		bridgeEnabled = true
+		dist = (pos1.p-pos2.p).magnitude
+		end
+		end)
+		
+		while true do
+		wait(.1)
+		if bridgeEnabled then
+		asdf(pos1.p, pos2.p, {
+		["CanCollide"] = true,
+		["Size"] = Vector3.new(bridgesize, 1, dist),
+		["CFrame"] = CFrame.new(pos1.p, pos2.p) * CFrame.new(0,0, -dist/2) * CFrame.Angles(0,0,0),
+		})
+		end
+		end
+		end	
+		
+		if msg:match("/tp cell") then
+			game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-7.601, 4.005, 2.52))
+		end	
+		
+		if msg:match("/tp crims") then
+			game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-600.986, -27.542, -333))
+		end
+		
+		if msg:match("/tp cake") then
+			game.Players.LocalPlayer.Character:MoveTo(Vector3.new(104.693, 1.86, -25.307))
+		end
+		
+		if msg:match("/tp tower") then
+			game.Players.LocalPlayer.Character:MoveTo(Vector3.new(192.501, 45.176, -191.497))
+		end
+		
+		if msg:match("/tp police") then
+			game.Players.LocalPlayer.Character:MoveTo(Vector3.new(92, 1.5, 21))
+		end
+		
+		if msg:match("/btools") then
+			loadstring(game:HttpGet("https://pastebin.com/raw/W5G4V6x4", true))()
+		end
+		
+		if msg:match("/key") then
+			game.Workspace.resources.RemoteFunction:InvokeServer("giveItem", "Fake ID Card")
+		end
+		
+		if msg:match("/ss") then
+			loadstring(game:HttpGet("https://pastebin.com/raw/7VL2X0sd", true))()
+		end
+	end)
+	
+	game.Players.PlayerAdded:Connect(function(player)
+	if player:IsFriendsWith(game.Players.LocalPlayer.UserId) then
+		game.StarterGui:SetCore("SendNotification", {
+		   Title = "new friend joined",
+		   Text = player.Name,
+		   Duration = 1
+	})
+	end
+	game.StarterGui:SetCore("SendNotification", {
+		   Title = "new player joined",
+		   Text = player.Name,
+		   Duration = 1
+	})
+	end)
+	
+	
+
+end
+coroutine.resume(coroutine.create(SCRIPT_QAEN81_FAKESCRIPT))
+function SCRIPT_LHGD74_FAKESCRIPT() -- exit.exitscript 
+	local script = Instance.new('LocalScript')
+	script.Parent = exit
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Parent.cmdsmain.Visible = false
+	end)
+
+end
+coroutine.resume(coroutine.create(SCRIPT_LHGD74_FAKESCRIPT))
+function SCRIPT_KYNQ66_FAKESCRIPT() -- back.back1 
+	local script = Instance.new('LocalScript')
+	script.Parent = back
+	script.Parent.MouseButton1Click:Connect(function()
+		print('nope')
+	end)
+
+end
+coroutine.resume(coroutine.create(SCRIPT_KYNQ66_FAKESCRIPT))
+function SCRIPT_HSIT90_FAKESCRIPT() -- next.next1 
+	local script = Instance.new('LocalScript')
+	script.Parent = next
+	script.Parent.MouseButton1Click:Connect(function()
+			script.Parent.Parent.Parent.cmdsmain.Visible = false
+		script.Parent.Parent.Parent.cmdsmain2.Visible = true
+	end)
+
+end
+coroutine.resume(coroutine.create(SCRIPT_HSIT90_FAKESCRIPT))
+function SCRIPT_JTLR65_FAKESCRIPT() -- exit_2.exitscript 
+	local script = Instance.new('LocalScript')
+	script.Parent = exit_2
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Parent.cmdsmain2.Visible = false
+	end)
+
+end
+coroutine.resume(coroutine.create(SCRIPT_JTLR65_FAKESCRIPT))
+function SCRIPT_YRJW88_FAKESCRIPT() -- next_2.next2 
+	local script = Instance.new('LocalScript')
+	script.Parent = next_2
+	script.Parent.MouseButton1Click:Connect(function()
+		
+	end)
+
+end
+coroutine.resume(coroutine.create(SCRIPT_YRJW88_FAKESCRIPT))
+function SCRIPT_LZQY89_FAKESCRIPT() -- back_2.back2 
+	local script = Instance.new('LocalScript')
+	script.Parent = back_2
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.cmdsmain.Visible = true
+		script.Parent.Parent.Parent.cmdsmain2.Visible = false
+	end)
+
+end
+coroutine.resume(coroutine.create(SCRIPT_LZQY89_FAKESCRIPT))
+function SCRIPT_FFSZ68_FAKESCRIPT() -- voidrpadmin.instrucs 
+	local script = Instance.new('LocalScript')
+	script.Parent = voidrpadmin
+	game:GetService("StarterGui"):SetCore("SendNotification", {
+	Title = "Void";
+	Text = "press f9 to see the help";
+	Duration = 1
+	})
+	
+	print([[
+	-----------------------V O I D-----------------------
+	script made by autist69420#9309						-
+														-
+	commands:											-
+														-
+	type /cmds to see the commands						-
+	prefix is /											-
+														-
+	special commands:									-
+														-
+	1. /ss	give you a server sided script executer	    -
+														-
+	------------------------------------------------------
+	]])
+
+end
+coroutine.resume(coroutine.create(SCRIPT_FFSZ68_FAKESCRIPT))
